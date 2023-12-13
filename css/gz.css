@@ -48,7 +48,7 @@
 
 .nav_photos { background-image:url('/photos.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
 
-.nav_text_other { background:white; font-size: 18px; padding: 3px 10px 0 0; border:none; position:relative; left: 0px; top:94px; width: 825px; height:20px; text-align:right; line-height: 80%;}
+.nav_text_other { background:white; font-size: 18px; padding: 3px 10px 0 0; border:none; position:relative; left: 0px; top:94px; width: 825px; height:20px; text-align:left; line-height: 80%;}
 
 
 div.photo_set_name {float:left; width: 220px; padding: 0; margin: 0;}
@@ -57,7 +57,7 @@ div.photo_set_date {float:left; text-align: right; width: 50px; padding: 0; marg
 .main_section:not(pswp-gallery pswp-gallery--single-column) { background-color:#EBEBEB; border: 1px solid #CCC;}
 
 
-.nav_text_other {background:white; padding: 3px 10px 0 0; border:none; position:relative; left: 0px; top:94px; width: 825px; height:26px; text-align:right; line-height: 80%;}
+.nav_text_other {background:white; padding: 3px 10px 0 0; border:none; position:relative; left: 0px; top:94px; width: 825px; height:26px; text-align:left; line-height: 80%;}
 
 .red_pluses {color:#CC0033; font-weight:bold;}
 
