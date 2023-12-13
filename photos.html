@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZ Photos - Underground Arts & Culture at RPI</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="/mouseover.js"></script>
+    <script type="text/javascript">
+<!--
+	var xmlHttp;
+
+	function changeThumbnails(start)
+	{ 
+		xmlHttp=GetXmlHttpObject();
+		if (xmlHttp==null)
+	 	{
+	 		alert ("Browser does not support HTTP Request");
+	 		return;
+	 	}
+		
+		var url="/thumbnails.php?folder=Slow Six and Lymbyc Systym";
+		url = url + "&start=" + start + "&length=3";
+		
+		xmlHttp.onreadystatechange=stateChanged 
+		xmlHttp.open("GET",url,true)
+		xmlHttp.send(null)
+	}
+	
+	function getNextPhoto()
+	{
+		xmlHttp=GetXmlHttpObject();
+		if (xmlHttp==null)
+	 	{
+	 		alert ("Browser does not support HTTP Request");
+	 		return;
+	 	}
+	
+		var url = "/next_photo.php";
+		var params = "folder=Slow Six and Lymbyc Systym&current_photo=";
+		params = params + document.getElementById("display_image").src;
+		document.getElementById("main_heading").innerHTML = "photos <span class=\"success_message\">loading...</span>";
+		
+		xmlHttp.onreadystatechange=loadNextPhoto;
+		xmlHttp.open("POST", url, true);
+		//Send the proper header information along with the request
+		xmlHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xmlHttp.setRequestHeader("Content-length", params.length);
+		xmlHttp.setRequestHeader("Connection", "close");
+		xmlHttp.send(params);
+	}
+	
+	function loadNextPhoto()
+	{
+		if(xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+		{
+			var response = xmlHttp.responseText;
+			
+			if(response != "")
+			{
+				var retvals = response.split(",");
+				document.getElementById("display_image").src = retvals[0];
+				changeThumbnails(retvals[1]);
+			} 
+			else
+				document.getElementById("main_heading").innerHTML = "photos";
+		}
+	}
+
+	function stateChanged() 
+	{ 
+		if (xmlHttp.readyState==4 || xmlHttp.readyState=="complete")
+		{
+	 		document.getElementById("thumbnails").innerHTML = xmlHttp.responseText
+			document.getElementById("main_heading").innerHTML = "photos";
+		} 
+	}
+
+	function GetXmlHttpObject()
+	{
+		var xmlHttp=null;
+		try
+		{   // Firefox, Opera 8.0+, Safari
+		 	xmlHttp=new XMLHttpRequest();
+		}
+		catch (e)
+		{
+			//Internet Explorer
+		 	try {xmlHttp=new ActiveXObject("Msxml2.XMLHTTP"); }
+		 	catch (e) { xmlHttp=new ActiveXObject("Microsoft.XMLHTTP"); }
+		 }
+		return xmlHttp;
+	}
+	
+	function changeDisplayImage(file)
+	{
+		document.getElementById("display_image").src = file;
+	}
+	
+	-->
+</script>
+  </head>
+  <body>
+<div class="main">
+
+  <div id="nav_photos" class="nav_photos" style="background-image:url(/images/photos.jpg); background-color: none;">
+  
+    <div id="nav_text_other" class="nav_text_other"> 
+      	<a href="index.html" class="navlink"><b>home</b></a> 
+      	<a href="about.html" class="navlink">about</a> 
+      	<a href="events.html" class="navlink"><b>events</b></a>
+      	<a href="photos.html" class="navlink"> photos </a>
+      	<a href="people.html" class="navlink"><b>people</b></a>
+    </div>
+    
+  </div>
+  
+  <div class="sidebar">
+  
+	  <div id="event_select" class="event_select">
+  
+	  	<h2>select an event</h2>
+		<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=Slow Six and Lymbyc Systym">Slow Six and Lymbyc Systym</a></div>
+<div class="photo_set_date">4/17/10</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=Adrian Aardvark">Adrian Aardvark</a></div>
+<div class="photo_set_date">3/22/09</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=Epic Fest">Epic Fest</a></div>
+<div class="photo_set_date">2/28/09</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=Via Audio">Via Audio</a></div>
+<div class="photo_set_date">9/13/08</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=SlowSix">Slow Six</a></div>
+<div class="photo_set_date">4/12/08</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=SgtDunbar">Sgt. Dunbar and the Hobo Banned</a></div>
+<div class="photo_set_date">3/01/08</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=CapillaryAction">Capillary Action &amp; PWRFL Power</a></div>
+<div class="photo_set_date">2/23/08</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=ActionPainters">Action Painters</a></div>
+<div class="photo_set_date">2/16/08</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=April-TNO-2007">Troy Night Out April 2007</a></div>
+<div class="photo_set_date">4/27/07</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=Felice Brothers-Drew-SeaGlass">The Felice Brothers</a></div>
+<div class="photo_set_date">10/13/06</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=DeadScienceFirstTime">The Dead Science</a></div>
+<div class="photo_set_date">10/29/05</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=Battles-POTOTSOLATTTJ-Benjikope">Battles</a></div>
+<div class="photo_set_date">11/11/04</div>
+
+<div class="photo_set_name"><span class="black_pluses"> +&nbsp;&nbsp;</span><a href="photos.html?folder=Japanther-POTOTSOLATTTJ">Japanther and POTOTSOLATTTJ</a></div>
+<div class="photo_set_date">10/02/04</div>
+
+
+		<br class="clear"><br>
+	  </div>  
+  
+	   <div id="join" class="join">
+ 	              <!--
+            <h2>stay updated</h2>
+	 		Enter your e-mail to join our mailing list!<br> <br>
+	  		<input type="text" id="txtEmail">&nbsp;&nbsp;
+			<input type="submit" value="Submit" onclick="javascript:fnSubmitEmailForList();">
+ 		    -->
+	  </div>
+  
+  </div>
+  
+  <div id="photos_main" class="main_section">
+		<h2 id="main_heading">photos</h2>
+ 	    <span>
+  	    Note from Webmaster: Gallery not yet functional.
+   	    </span>
+
+		<div style="width: 460px; text-align: center; padding: 0; margin-left: -1px;">	
+			<a href="javascript:getNextPhoto();"><img src="https://gzbasement.com/event_photos/Slow Six and Lymbyc Systym/IMG_6340.jpg" class="display_image" id="display_image"></a>
+		
+		</div>
+		
+		<span id="thumbnails" name="thumbnails">
+			<div class="thumbnail_arrow">&nbsp;</div><div class="thumbnails"><a href="javascript:changeDisplayImage('/event_photos/Slow Six and Lymbyc Systym/IMG_6340.jpg');"><img src="https://gzbasement.com/event_photos/Slow Six and Lymbyc Systym/thumbs/IMG_6340.jpg" class="thumbnail">&nbsp;</a><a href="javascript:changeDisplayImage('/event_photos/Slow Six and Lymbyc Systym/IMG_6364.jpg');"><img src="https://gzbasement.com/event_photos/Slow Six and Lymbyc Systym/thumbs/IMG_6364.jpg" class="thumbnail">&nbsp;</a><a href="javascript:changeDisplayImage('/event_photos/Slow Six and Lymbyc Systym/IMG_6372.jpg');"><img src="https://gzbasement.com/event_photos/Slow Six and Lymbyc Systym/thumbs/IMG_6372.jpg" class="thumbnail">&nbsp;</a></div><div class="thumbnail_arrow"><a href="javascript:changeThumbnails(3);"><span style="font-size: 36px;">»</span></a></div>		</span>
+		<br style="clear: both;">
+		<div class="event_desc"><b>Description: </b>
+			Slow Six + Lymbyc Systym + Severe Severe. Holy sh*t, so good. Good pix too. 		</div><br>
+  </div>
+
+</div>
+
+</body>
+  </body>
+      <center><p><img src="/images/constructionsmall.gif"></p></center>
+</html>

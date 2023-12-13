@@ -1,0 +1,74 @@
+/* Teal Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #00897b;
+  --primary-hover: #00796b;
+  --primary-focus: rgba(0, 137, 123, 0.125);
+  --primary-inverse: #FFF;
+}
+
+/* Teal Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #00897b;
+    --primary-hover: #009688;
+    --primary-focus: rgba(0, 137, 123, 0.25);
+    --primary-inverse: #FFF;
+  }
+}
+
+/* Teal Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #00897b;
+  --primary-hover: #009688;
+  --primary-focus: rgba(0, 137, 123, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* Teal (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
+
+.nav {padding: 0; width:495px; height:372px; padding:0; float: left;}
+
+.nav_events {	background-image:url('/events.jpg'); padding:0; width:825px; height:150px;}
+
+.nav_past_events { background-image:url('/past_events.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
+
+.nav_members { background-image:url('/members.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
+
+.nav_about { background-image:url('/about.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
+
+.nav_photos { background-image:url('/photos.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
+
+.nav_text_other { background:white; font-size: 18px; padding: 3px 10px 0 0; border:none; position:relative; left: 0px; top:94px; width: 825px; height:20px; text-align:right; line-height: 80%;}
+
+
+div.photo_set_name {float:left; width: 220px; padding: 0; margin: 0;}
+div.photo_set_date {float:left; text-align: right; width: 50px; padding: 0; margin: 0;}
+
+.main_section:not(pswp-gallery pswp-gallery--single-column) { background-color:#EBEBEB; border: 1px solid #CCC;}
+
+
+.nav_text_other {background:white; padding: 3px 10px 0 0; border:none; position:relative; left: 0px; top:94px; width: 825px; height:26px; text-align:right; line-height: 80%;}
+
+.red_pluses {color:#CC0033; font-weight:bold;}
+
+.black_pluses {color:#000000; font-weight:bold;}
+
+.sidebar {background-color:#EBEBEB;}
+
+span.news_header {font-weight: bold;}
+
+.events {border: 1px solid #CCC;}
+.event_listings{margin:0;padding:0; width: 270px;}
+.event_bottom{clear:both;margin: 0;padding:0;height: 15px;}
+
+BODY { background-image:url('/images/paisley_tile.gif');  background-repeat: repeat;}

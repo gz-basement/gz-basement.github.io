@@ -1,0 +1,127 @@
+BODY {font-family:arial, helvetica; font-size:12px; background-image:url('/images/paisley_tile.gif'); }
+
+img {border:none;}
+
+img.thumbnail {border:none; text-decoration: none; height: 80px;}
+
+B { font-weight:bold;}
+
+h2 { font-size: 18px; font-weight:bold;}
+
+hr {border:solid #ddd; border-width:1px 0 0; height:0;}
+hr.news_divider {border:solid #333; border-width:1px 0 0; height:0;}
+
+a, a:visited {color: #089A77; text-decoration: none;}
+
+a:hover {color: #DF3DA9; text-decoration: none;}
+
+a img {border: 3px #089A77 solid;}
+
+a.navlink, a.navlink:visited {color:#000000; text-decoration:none;}
+a.navlink:hover {color:#999999;}
+
+
+div {padding:.4cm; padding-top:.1cm; background-color:#EBEBEB; width:274px; top: 0px; margin-bottom:15px;}
+
+.main {background: none; width:825px; margin:auto;}
+body > .main {background: none; width:825px; margin:auto; overflow: hidden;}
+
+.nav_text {background:white; font-size: 16px; padding: 3px 10px 0 0; border:none; position:relative; left: 0px; top:60px; width: 485px; height:16px; text-align:right; line-height: 80%;}
+
+
+.main_section { width:465px; position:relative; float:left; top:0px; border: 1px solid #CCC; overflow: hidden;}
+
+.admin_section { width:795px; position:relative; float:left; top:0px; border: 1px solid #CCC;}
+
+.about { border: 1px solid #CCC; }
+
+.booking { border: 1px solid #CCC; }
+
+.upload { border: 1px solid #CCC; }
+
+.directions { border: 1px solid #CCC; }
+
+.events {border: 1px solid #CCC;}
+.event_listings{margin:0;padding:0; width: 270px;}
+.event_bottom{clear:both;margin: 0;padding:0;height: 15px;}
+
+.members_only {border: 1px solid #CCC;}
+
+.event_select {border: 1px solid #CCC;}
+
+.join {border: 1px solid #CCC;}
+
+.sidebar{padding:0; background:none; top: 0px; position:relative; float:right; width: 306px;}
+
+.nav {padding: 0; width:495px; height:372px; float: left; border: 1px solid #CCC;}
+
+.nav_events { border: 1px solid #CCC;	background-image:url('/events.jpg'); padding:0; width:825px; height:150px;}
+
+.nav_past_events { border: 1px solid #CCC;	background-image:url('/past_events.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
+
+.nav_members { border: 1px solid #CCC;	background-image:url('/members.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
+
+.nav_about { border: 1px solid #CCC;	background-image:url('/about.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
+
+.nav_photos { border: 1px solid #CCC;	background-image:url('/photos.jpg'); padding:0; width:825px; 	height:150px; overflow:hidden;}
+
+.nav_text_other {background:white; font-size: 16px; padding: 3px 10px 0 0; border:none; position:relative; left: 0px; top:94px; width: 815px; height:16px; text-align:right; line-height: 80%;}
+
+.events_listing { width:450px; padding:10px;}
+
+.event_date {vertical-align:top; padding-right:0px; padding-top:20px; font-weight:bold; width:65px; margin-left:10px; float:left; white-space: nowrap; font-size: 14px; border: 1px solid #EBEBEB; }
+.event_show {vertical-align:top; padding-bottom:20px; padding-top:20px; float: left;border: 1px solid #EBEBEB; width: 330px;}
+
+.mini_event_date {margin:0; padding: 0; white-space: nowrap; vertical-align: top; float: left; font-weight:bold; width: 80px;}
+.mini_event_show {margin:0; padding: 0; padding-left: 10px; padding-bottom: 15px; font-size: 12px; font-weight: bold; float: left; font-weight:bold; width: 150px; }
+.mini_admission {font-size: 10px; font-weight: normal;}
+
+.separator {border-top: 4px double #ccc; margin: 0; padding: 0; clear: both;}
+
+.headliner {font-size:28px; font-weight:bold; }
+.mini_headliner {font-size: 18px; font-weight: bold;}
+
+.opener { font-size:18px; font-weight:bold; }
+.mini_opener {font-size: 12px;}
+
+.red_pluses {color:#CC0033; font-weight:bold;}
+
+.black_pluses {color:#000000; font-weight:bold;}
+
+div.event_desc {font-weight: normal; padding: 0; margin: 0; text-align: left; width: 460px; font-size: 10px;}
+
+div.form_label {padding: 0; margin: 0; font-weight: bold; width: 120px; float: left; padding: 4px;}
+
+div.form_field {padding: 0; margin: 0; width: 500px; float: left;}
+
+br.clear {clear: both;}
+
+.officer_name {float: left; width: 25%; padding: 0 5px 3px 5px; margin:0; clear: both;}
+.officer_position {float: left; width: 30%; padding: 0 5px 3px 5px; margin:0;}
+.officer_email {float: left; width: 30%; padding: 0 5px 3px 5px; margin:0;}
+
+.officer_header{width: 190px; text-align: center; font-weight:bold;padding: 0 20px 0 0; margin:0;float:left;}
+ 
+span.news_header {font-weight: bold; font-size: 16px;}
+
+span.success_message {color: #339900; font-style:italic; font-weight: bold;}
+
+ul.bandlist {list-style: none; padding-left: 20px;}
+
+div.photo_set_name {float:left; width: 220px; padding: 0; margin: 0;}
+div.photo_set_date {float:left; text-align: right; width: 50px; padding: 0; margin: 0;}
+
+img.display_image {border: 3px black solid;}
+
+div.thumbnail_arrow {width: 40px; height:50px; float:left; padding: 15px 0 0 0;text-align: center;}
+div.thumbnails {float:left;padding: 0 5px 0 5px;width: 370px;height:85px;text-align: center;}
+
+div.past_band_header{width: 350px; text-align: center; font-weight:bold;padding: 0 20px 0 0; margin:0;float:left;}
+
+div.poster_upload_column {float: left;text-align: center;height: 290px; margin:0; padding: 0;}
+
+div.prev_news_nav{text-align: left;width: 232px;float:left;margin:0;padding:0;}
+div.next_news_nav{text-align: right;width: 232px;float:left;margin:0;padding:0;}
+
+
+.admin_link {font-weight: bold; font-size: 14px;}
